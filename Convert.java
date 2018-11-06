@@ -7,14 +7,12 @@ import java.util.Arrays;
 public class Convert {
 	static int x;
 	int remainder = (x / 2);
-	
 	static ArrayList<Integer> binArr = new ArrayList<Integer>();
-
+	
 	public static void convert() {
 		Scanner scan = new Scanner(System.in);
 		x = scan.nextInt();
-
-		while (x / 2 > 0) {
+		while (x>1) {
 			if (x % 2 == 1) {
 				binArr.add(0, 1);
 			} 
