@@ -8,7 +8,7 @@ public class Convert {
 	static int x;
 	int remainder = (x / 2);
 	static ArrayList<Integer> binArr = new ArrayList<Integer>();
-	static char[] badChars = { ',', ' ', '[', ']' };
+	static final char[] BAD_CHARS = { ',', ' ', '[', ']' };
 	static Character empty = null;
 
 	public static void convert() {
@@ -33,7 +33,7 @@ public class Convert {
 	public static String removeChar(String s) {
 		String r = "";
 		for (char c: s.toCharArray()) {
-			if (!contains(badChars, c)) {
+			if (!contains(BAD_CHARS, c)) {
 				r+=c;
 			}
 		}
